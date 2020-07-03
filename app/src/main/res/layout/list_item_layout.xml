@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/one_grid"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <TextView
+        android:id="@+id/name_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="15dp"
+        android:layout_marginTop="5dp"
+        android:gravity="center"
+        android:text="腾讯新闻"
+        android:textColor="@android:color/holo_blue_light"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/content_tv"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/name_tv"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="10dp"
+        android:padding="5dp"
+        android:text="童蕾一袭红裙亮相盛典 优雅大气又不失明朗妩媚"
+        android:textSize="15sp" />
+
+    <LinearLayout
+        android:id="@+id/picture_faxian"
+        android:layout_below="@+id/content_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:padding="10dp">
+
+        <com.android.volley.toolbox.NetworkImageView
+            android:id="@+id/thumbnail_pic_s"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <com.android.volley.toolbox.NetworkImageView
+            android:id="@+id/thumbnail_pic_s02"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <com.android.volley.toolbox.NetworkImageView
+            android:id="@+id/thumbnail_pic_s03"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+    </LinearLayout>
+
+    <com.example.toptab.dianzan.ShineButton
+        android:id="@+id/po_image"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_below="@+id/picture_faxian"
+        android:layout_alignParentRight="true"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginRight="59dp"
+        android:layout_marginBottom="20dp"
+        app:btn_color="@android:color/darker_gray"
+        app:btn_fill_color="@android:color/holo_red_light"
+        app:enable_flashing="true"
+        app:siShape="@raw/like" />
+
+    <Button
+        android:id="@+id/comment"
+        android:layout_width="30dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="23dp"
+        android:background="@mipmap/comment"
+        android:layout_below="@+id/picture_faxian"
+        android:layout_toLeftOf="@+id/po_image" />
+</RelativeLayout>

@@ -1,0 +1,369 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mescrollview"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:scrollbars="none">
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <!--设置按钮-->
+        <Button
+            android:id="@+id/meset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@mipmap/set"
+            android:layout_alignParentEnd="true"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="30dp"
+            tools:ignore="RelativeOverlap" />
+        <!-- 自定义头像图片圆圈格式-->
+        <com.example.CircleImageView.CircleImageView
+            android:id="@+id/meview"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_centerInParent="true"
+            android:scaleType="centerCrop"
+            android:src="@mipmap/nologin"
+            android:layout_below="@id/meset"
+            android:layout_marginTop="30dp"
+            android:layout_alignParentStart="true"
+            android:layout_marginStart="30dp"
+            />
+        <!--呢称提示-->
+        <TextView
+            android:id="@+id/loginname"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="登录/注册"
+            android:textSize="15sp"
+            android:textColor="@color/loginword"
+            android:layout_toEndOf="@id/meview"
+            android:layout_marginTop="100dp"
+            android:layout_marginStart="10dp"
+            />
+        <!--用户呢称显示-->
+        <TextView
+            android:id="@+id/mename"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:textSize="15sp"
+            android:layout_toEndOf="@id/loginname"
+            android:layout_marginTop="100dp"
+            android:layout_marginStart="10dp"
+            />
+        <!--个人设置-->
+        <!--            android:drawableEnd="@mipmap/right"-->
+        <TextView
+            android:id = "@+id/set"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+
+            android:text="请登录使用"
+            android:textSize="15sp"
+            android:layout_toEndOf="@id/meview"
+            android:layout_below="@id/mename"
+            android:layout_marginTop="15dp"
+            android:layout_marginStart="10dp"
+           />
+    </RelativeLayout>
+
+
+    <!--分割条-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            />
+    </RelativeLayout>
+
+
+<!--收藏、历史、帖子、优惠券导航栏-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:baselineAligned="false"
+            tools:ignore="UselessParent">
+
+            <!--收藏-->
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+                <ImageView
+                    android:id="@+id/collection"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:src="@mipmap/btn_know_nor"
+                    android:contentDescription="@null"/>
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/collection"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/collection"
+                    android:textColor="@color/bottomtab_normal"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <!--优惠券-->
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+                <ImageView
+                    android:id="@+id/coupons"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:src="@mipmap/btn_my_nor"
+                    android:contentDescription="@null" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/coupons"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/coupons"
+                    android:textColor="@color/bottomtab_normal"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <!--历史-->
+            <RelativeLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1">
+                <ImageView
+                    android:id="@+id/history"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:src="@mipmap/btn_my_nor"
+                    android:contentDescription="@null" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/history"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/history"
+                    android:textColor="@color/bottomtab_normal"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+            <!--帖子-->
+            <RelativeLayout
+                android:id="@+id/rl_want_know"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.0" >
+                <ImageView
+                    android:id="@+id/post"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerHorizontal="true"
+                    android:src="@mipmap/btn_wantknow_nor"
+                    android:contentDescription="@null" />
+                <TextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/post"
+                    android:layout_centerHorizontal="true"
+                    android:text="@string/post"
+                    android:textColor="@color/bottomtab_normal"
+                    android:textSize="12sp" />
+            </RelativeLayout>
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    <!--分割条-->
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <GridLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:rowCount="6"
+            android:columnCount="4"
+            tools:ignore="UselessParent">
+
+            <!--常用功能-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_columnSpan="4"
+                android:text="@string/function"
+                android:textSize="18sp"
+                android:layout_marginStart="20dp"
+                android:layout_marginBottom="20dp"/>
+            <ImageView
+                android:id="@+id/wallet"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:src="@mipmap/btn_wantknow_nor"
+                android:contentDescription="@null" />
+            <ImageView
+                android:id="@+id/order"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:src="@mipmap/btn_wantknow_nor"
+                android:contentDescription="@null" />
+            <ImageView
+                android:id="@+id/orderservice"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:src="@mipmap/btn_wantknow_nor"
+                android:contentDescription="@null" />
+            <ImageView
+                android:id="@+id/pricehost"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:src="@mipmap/btn_wantknow_nor"
+                android:contentDescription="@null" />
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:gravity="center"
+                android:text="@string/wallet"
+                android:textColor="@color/bottomtab_normal"
+                android:textSize="12sp" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:gravity="center"
+                android:text="@string/order"
+                android:textColor="@color/bottomtab_normal"
+                android:textSize="12sp" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:gravity="center"
+                android:text="@string/orderservice"
+                android:textColor="@color/bottomtab_normal"
+                android:textSize="12sp" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:gravity="center"
+                android:text="@string/pricehost"
+                android:textColor="@color/bottomtab_normal"
+                android:textSize="12sp" />
+
+
+            <!--分割条-->
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="20dp"
+                android:layout_columnSpan="4"
+                />
+
+
+            <ImageView
+                android:id="@+id/feedback"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:src="@mipmap/btn_wantknow_nor"
+                android:contentDescription="@null" />
+            <ImageView
+                android:id="@+id/share"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:src="@mipmap/btn_wantknow_nor"
+                android:contentDescription="@null" />
+            <ImageView
+                android:id="@+id/we"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:src="@mipmap/btn_wantknow_nor"
+                android:contentDescription="@null" />
+            <ImageView
+                android:id="@+id/consultant"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:src="@mipmap/btn_wantknow_nor"
+                android:contentDescription="@null" />
+
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:gravity="center"
+                android:text="@string/feedback"
+                android:textColor="@color/bottomtab_normal"
+                android:textSize="12sp" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:gravity="center"
+                android:text="@string/share"
+                android:textColor="@color/bottomtab_normal"
+                android:textSize="12sp" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:gravity="center"
+                android:text="@string/we"
+                android:textColor="@color/bottomtab_normal"
+                android:textSize="12sp" />
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_columnWeight="1"
+                android:gravity="center"
+                android:text="@string/consultant"
+                android:textColor="@color/bottomtab_normal"
+                android:textSize="12sp" />
+        </GridLayout>
+    </RelativeLayout>
+
+
+</LinearLayout>
+
+</ScrollView>

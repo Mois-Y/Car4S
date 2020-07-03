@@ -1,0 +1,62 @@
+<resources>
+    <string name="app_name">CarApp</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="bottom_tab_know">首页</string>
+    <string name="bottom_tab_wantknow">论坛</string>
+    <string name="bottom_tab_my">购车</string>
+    <string name="mename">呢称:</string>
+    <string name="set">个人设置</string>
+    <string name="collection">收藏</string>
+    <string name="coupons">优惠券</string>
+    <string name="history">历史</string>
+    <string name="post">帖子</string>
+    <string name="function">常用功能</string>
+    <string name="wallet">我的钱包</string>
+    <string name="order">我的订单</string>
+    <string name="orderservice">预约服务</string>
+    <string name="pricehost">价格举报</string>
+    <string name="feedback">意见反馈</string>
+    <string name="share">分享</string>
+    <string name="we">我们</string>
+    <string name="consultant">客服</string>
+    <string name="head">这里是HeadView</string>
+    <string name="pull_to_refresh">下拉刷新</string>
+    <string name="release_to_refresh">释放立即刷新</string>
+    <string name="refreshing">正在刷新...</string>
+    <string name="refresh_succeed">刷新成功</string>
+    <string name="refresh_fail">刷新失败</string>
+    <string name="pullup_to_load">上拉加载更多</string>
+    <string name="release_to_load">释放立即加载</string>
+    <string name="loading">正在加载...</string>
+    <string name="load_succeed">加载成功</string>
+    <string name="load_fail">加载失败</string>
+    <string name="load_foot">正在加载更多.....</string>
+
+    <!--名字-->
+    <string name="name1">赵...</string>
+    <string name="name2">孙...</string>
+    <string name="name3">李...</string>
+    <string name="name4">周...</string>
+    <string name="name5">吴...</string>
+    <string name="name6">郑...</string>
+    <string name="name7">王...</string>
+    <string name="name8">冯...</string>
+    <string name="name9">胡思月</string>
+    <string name="name10">陈嘉煜</string>
+    <string name="name11">沈...</string>
+
+    <!--信息-->
+    <string name="info1">世上没有绝望的处境，只有对处境绝望的人。</string>
+    <string name="info2">大多数人想要改造这个世界，但却罕有人想改造自己。 </string>
+    <string name="info3">积极的人在每一次忧患中都看到一个机会， 而消极的人则在每个机会都看到某种忧患。</string>
+    <string name="info4">莫找借口失败，只找理由成功。</string>
+    <string name="info5">世上没有绝望的处境，只有对处境绝望的人。  </string>
+    <string name="info6">当你感到悲哀痛苦时，最好是去学些什么东西。学习会使你永远立于不败之地。</string>
+    <string name="info7">世界上那些最容易的事情中，拖延时间最不费力。 </string>
+    <string name="info8">人之所以能，是相信能。</string>
+    <string name="info9">陈嘉煜是大傻子</string>
+    <string name="info10">胡思月最帅！！</string>
+    <string name="info11">人生伟业的建立 ，不在能知，乃在能行。</string>
+
+</resources>

@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.carapp">
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.GET_TASKS" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE" />
+    <uses-permission android:name="android.permission.BROADCAST_STICKY" />
+    <uses-permission android:name="android.permission.WRITE_SETTINGS" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:name="com.example.toptab.BaseApplication"
+        android:theme="@style/AppTheme"
+        android:fullBackupContent="true">
+        <activity
+            android:name=".MainActivity"
+            android:label="@string/app_name"
+            android:theme="@style/QMUI.NoActionBar"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="com.example.MineChildPage.Setting"
+            android:theme="@android:style/Theme.Light.NoTitleBar"
+        >
+        </activity>
+        <activity android:name="com.example.MineChildPage.Login"
+            android:theme="@style/QMUI.NoActionBar">
+        </activity>
+        <activity android:name="com.example.toptab.Notify"
+            android:theme="@android:style/Theme.Light.NoTitleBar">
+        </activity>
+        <activity android:name="com.example.Top_Publish.Edit"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+        </activity>
+        <activity android:name="com.example.Top_Publish.PhotoActivity"
+            android:theme="@android:style/Theme.Light.NoTitleBar">
+        </activity>
+        <activity android:name="com.example.Top_Publish.TestPicActivity"
+            android:theme="@android:style/Theme.Light.NoTitleBar">
+        </activity>
+        <activity android:name="com.example.Top_Publish.ImageGridActivity"
+            android:theme="@android:style/Theme.Light.NoTitleBar">
+        </activity>
+        <activity android:name="com.example.toptab.ListItemMore"/>
+    </application>
+
+</manifest>

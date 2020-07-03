@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="topbar_bg">#b6292d</color>
+    <color name="bottomtab_normal">#c8bca5</color>
+    <color name="bottomtab_press">#8b572a</color>
+    <color name="line">#c8bca5</color>
+    <color name="loginword">#03A9F4</color>
+    <color name="white">#FFFFFF</color>
+    <color name="setline">#F0EBEB</color>
+    <color name="black">#000000</color>
+    <color name="blue">#67CAF7</color>
+
+    <color name="recoveryColorPrimary">@color/main_color</color>
+    <color name="recoveryColorPrimaryDark">@color/main_color</color>
+    <color name="recoveryColorAccent">#BDBDBD</color>
+    <color name="recoveryTextColor">#FFFFFF</color>
+
+    <color name="main_color">#5CB85C</color>
+
+    <color name="gray">#aaaaaa</color>
+    <color name="light_blue">#6593cb</color>
+</resources>

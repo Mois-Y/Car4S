@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:background="@color/white">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dip">
+            <Button
+                android:id="@+id/setback"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:background="@mipmap/leftpoint"
+                android:layout_centerInParent="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="15dp"
+            />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_centerInParent="true"
+                android:layout_alignParentStart="true"
+                android:layout_marginStart="25dp"
+                android:layout_marginTop="100dp"
+                android:text="请先登录"
+                android:textSize="20sp"
+             />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:theme="@style/Theme.AppCompat.NoActionBar">
+            <ImageView
+                android:id="@+id/phone"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/phone"
+                android:layout_centerInParent="true"
+                android:layout_alignParentStart="true"
+              />
+            <EditText
+                android:layout_width="250dp"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/phone"
+                android:inputType="number"
+                android:selectAllOnFocus="true"/>
+
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:theme="@style/Theme.AppCompat.Light.NoActionBar"
+            android:layout_marginTop="20dp">
+            <ImageView
+                android:id="@+id/pass"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@mipmap/pass"
+                android:layout_centerInParent="true"
+                android:layout_alignParentStart="true"
+                />
+            <EditText
+                android:id="@+id/passnumber"
+                android:layout_width="150dp"
+                android:layout_height="wrap_content"
+                android:layout_toEndOf="@+id/pass"
+                android:inputType="number"
+                android:selectAllOnFocus="true"/>
+            <View
+                android:id="@+id/passline"
+                android:layout_width="1dp"
+                android:layout_height="30dp"
+                android:background="@color/black"
+                android:layout_toEndOf="@+id/passnumber"
+                />
+            <Button
+                android:id="@+id/passbutton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@null"
+                android:text="获取验证码"
+                android:textSize="18sp"
+                android:layout_toEndOf="@+id/passline"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp">
+            <Button
+                android:id="@+id/login"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="登录"
+                android:textSize="22sp"
+                android:background="@drawable/button"
+                android:layout_centerInParent="true"
+                android:layout_alignParentBottom="true"/>
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="40dp">
+            <TextView
+                android:id="@+id/pasdlogin"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="账号密码登录"
+                android:textSize="15sp"
+                android:layout_centerInParent="true"
+                android:layout_alignParentBottom="true"
+                />
+        </RelativeLayout>
+
+    </LinearLayout>
+</RelativeLayout>
